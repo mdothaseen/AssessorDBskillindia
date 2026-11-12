@@ -1,0 +1,5914 @@
+{
+ "generated": "2026-11-06",
+ "portal": "https://admin.skillindiadigital.gov.in/admin-profile/",
+ "role": "Assessment Agency",
+ "stats": {
+  "js_files": 152,
+  "js_mb": 40,
+  "rea_route_patterns": 634,
+  "api_endpoints_all_roles": 1841,
+  "aa_routes": 44,
+  "aa_components": 44,
+  "role_modules": 26
+ },
+ "modules": [
+  {
+   "path": "approver",
+   "actors": [
+    "Budget Approver",
+    "Budget Initiator"
+   ]
+  },
+  {
+   "path": "pre-executive-committee",
+   "actors": [
+    "Executive Committee"
+   ]
+  },
+  {
+   "path": "executive-committee",
+   "actors": [
+    "Executive Committee"
+   ]
+  },
+  {
+   "path": "nsdcadmin",
+   "actors": [
+    "NSDC Admin",
+    "Ministry Admin"
+   ]
+  },
+  {
+   "path": "inspectionagency",
+   "actors": [
+    "Inspection Agency"
+   ]
+  },
+  {
+   "path": "continuousmonitoring",
+   "actors": [
+    "Continuous Monitoring"
+   ]
+  },
+  {
+   "path": "trainingpartner",
+   "actors": [
+    "Training Partner",
+    "SEO"
+   ]
+  },
+  {
+   "path": "trainingcentre",
+   "actors": [
+    "Training Centre",
+    "SEO",
+    "Training Partner",
+    "Camps"
+   ]
+  },
+  {
+   "path": "inprocesstp",
+   "actors": [
+    "Training Partner",
+    "Training Centre"
+   ]
+  },
+  {
+   "path": "inprocesstc",
+   "actors": [
+    "Training Centre"
+   ]
+  },
+  {
+   "path": "externalusers",
+   "actors": [
+    "External Users"
+   ]
+  },
+  {
+   "path": "trainer",
+   "actors": [
+    "Trainer"
+   ]
+  },
+  {
+   "path": "assessmentagency",
+   "actors": [
+    "Assessment Agency"
+   ]
+  },
+  {
+   "path": "assessor",
+   "actors": [
+    "Assessor"
+   ]
+  },
+  {
+   "path": "qualitycontrol",
+   "actors": [
+    "Quality Control"
+   ]
+  },
+  {
+   "path": "candidate",
+   "actors": [
+    "Candidate"
+   ]
+  },
+  {
+   "path": "pmkkspoc",
+   "actors": [
+    "pmkkspoc"
+   ]
+  },
+  {
+   "path": "cmaspoc",
+   "actors": [
+    "CMA SPOC",
+    "NCVT SPOC"
+   ]
+  },
+  {
+   "path": "cmahead",
+   "actors": [
+    "CMA HEAD"
+   ]
+  },
+  {
+   "path": "schemeapprover",
+   "actors": [
+    "Scheme Approver"
+   ]
+  },
+  {
+   "path": "commonnormsadmin",
+   "actors": [
+    "Common Norms Admin",
+    "Scheme Admin"
+   ]
+  },
+  {
+   "path": "schemeowner",
+   "actors": [
+    "Scheme Owner"
+   ]
+  },
+  {
+   "path": "covidschemepmu",
+   "actors": [
+    "COVIDSCHEMEPMU",
+    "RPL TC PMU"
+   ]
+  },
+  {
+   "path": "ab-profile",
+   "actors": [
+    "SSC"
+   ]
+  },
+  {
+   "path": "inspectionagencypmkvy4",
+   "actors": [
+    "Inspection Agency"
+   ]
+  },
+  {
+   "path": "seo",
+   "actors": [
+    "SEO"
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "route": "/",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency",
+   "depth": 0,
+   "component": "app-home",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/loggedInUser",
+     "via": "getAdditionalInfomartion",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency",
+   "depth": 1,
+   "component": "app-dashboard",
+   "redirect": null,
+   "live": "Live dekha: Dashboard cards + Overview counts",
+   "ui": {
+    "buttons": [
+     "View Details",
+     "Add Details"
+    ],
+    "tabs_menu": [
+     "Dashboard",
+     "Join the meeting now"
+    ],
+    "table_columns": [],
+    "headings": [
+     "Proposed Assessment Date(s)",
+     "Proposed Reassessment Date"
+    ],
+    "labels": [
+     "Home",
+     "For queries related to JSS scheme,",
+     "from 11 AM – 12 PM | For queries related to PMKVY,",
+     "from 11:30 AM – 12:30 PM | For queries related to other schemes,",
+     "from 12 PM – 1 PM |",
+     "Name of the Organization",
+     "AA ID",
+     "Address of the Organization",
+     "View Profile",
+     "Overview",
+     "Assigned Batches",
+     "Assessed Batches",
+     "Candidates Assessed",
+     "Candidates Certified",
+     "Certified Assessors",
+     "Master Assessors",
+     "Assessment Requests",
+     "View Assessment Requests",
+     "View My Assessors",
+     "Search Assessors",
+     "Search My Assessors",
+     "Proctor Pool",
+     "View Proctor Pool",
+     "Non-Assessor App Assessment Requests",
+     "View Non-Assessor App Assessment Requests",
+     "Batch Status & Payouts",
+     "View Batch Status & Payouts",
+     "Job Role"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "goToparticularPage",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "./aa-profile",
+    "ngClass",
+    "./search-assesor",
+    "./link-proctors/proctor-pool",
+    "./offline-assessment"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/loggedInUser",
+     "via": "getAdditionalInfomartion",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v2/nodeusermanagement/getcountforAA?userName={x}",
+     "via": "getCountOfOverViewAA",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/aa-profile",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/aa-profile",
+   "depth": 1,
+   "component": "app-aa-profile",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Edit Profile"
+    ],
+    "tabs_menu": [
+     "My Assessment Agency",
+     "Financial Details",
+     "Associations"
+    ],
+    "table_columns": [
+     "Sub - Sector",
+     "State",
+     "District",
+     "Job Role Name",
+     "Assessor Name",
+     "Mobile Number",
+     "Email",
+     "Linking Type"
+    ],
+    "headings": [
+     "Home",
+     "Single Point of Contact Info:",
+     "Address Details:",
+     "Other Information:",
+     "Associated Assessors"
+    ],
+    "labels": [
+     "Others :",
+     "Year of Establishment :",
+     "N/A",
+     "Sector (ID)",
+     "Assessor ID",
+     "View Assessment Agency Details",
+     "General Details",
+     "Name of the Organization :",
+     "Assessment Agency ID :",
+     "Type of Assessment Agency :",
+     "Overall Experience :",
+     "Available Mode of Assessment :",
+     "Languages Known for Assessment :",
+     "ISO Certification :",
+     "Upload ISO Certification Documents :",
+     "ISO Certification Document",
+     "VIEW",
+     "Name of the SPOC :",
+     "Email Address :",
+     "Phone Number :",
+     "Address :",
+     "Incorporation Year :",
+     "Nearby Landmark :",
+     "Pincode :",
+     "State / Union Territory :",
+     "District :",
+     "Tehsil / Mandal /Block :",
+     "City / Village / Town :",
+     "Parliamentary Constituency :",
+     "Address Proof :",
+     "Address Proof Document",
+     "Candidate Assessed till date :",
+     "Total staff :",
+     "Working under other Projects :",
+     "Key achievements :",
+     "Training Certificate of Assessor",
+     "Empanelled SSC"
+    ],
+    "options": [
+     "See Available Mode of Assessment",
+     "See Languages Known for Assessment",
+     "Yes",
+     "No"
+    ],
+    "messages": [
+     "No Data Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "editProfile",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "p",
+     "handler": "previewIsoDoc",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "p",
+     "handler": "viewAddressProof",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "nameOfAssAgency",
+    "assAgencyId",
+    "typeOfAA",
+    "overallExp",
+    "modeOfAssessment",
+    "languageKnown",
+    "isoCertification",
+    "nameOfSpoc",
+    "email",
+    "phoneNumber",
+    "address",
+    "incorpYear",
+    "landMark",
+    "pinCode",
+    "state",
+    "district",
+    "tehsil",
+    "city",
+    "parliamentConsti",
+    "candidateAssessedDate",
+    "numberOfAdminStaff",
+    "workingUnderProject",
+    "keyAchievements",
+    "otherModeOfAssessment"
+   ],
+   "links": [
+    "../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessmentAgency/ssc?username={x}",
+     "via": "getAssociateSSc",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessmentAgency/link/assessors/{x}",
+     "via": "getAssociateAA",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessmentAgency/{x}",
+     "via": "getAssesmentAgencyByUserName",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/get/dropdown/data",
+     "via": "getAssessmentAgencyRegDd",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/edit-profile",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/edit-profile",
+   "depth": 1,
+   "component": "app-edit-aa-profile",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [
+     "Completed",
+     "General Details",
+     "Financial Details",
+     "Associations",
+     "Single Point of Contact Info",
+     "Address Details",
+     "Other Information"
+    ],
+    "labels": [
+     "Edit Assessor Profile",
+     "Enter all the details of Assessor",
+     "Name of the Organization :",
+     "Assessment Agency ID :",
+     "Type of Assessment Agency :",
+     "Overall Experience :",
+     "Available Mode of Assessment :",
+     "Languages Known for Assessment :",
+     "Name of the SPOC :",
+     "Email Address :",
+     "Phone Number :",
+     "Candidate Assessed till date :",
+     "Total staff :",
+     "Working under other Projects :",
+     "Key achievements :",
+     "NEXT"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goToNextPage",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "nameOfAssAgency",
+    "assAgencyId",
+    "typeOfAA",
+    "overallExp",
+    "modeOfAssessment",
+    "languageKnown",
+    "nameOfSpoc",
+    "email",
+    "phoneNumber",
+    "candidateAssessedDate",
+    "numberOfAdminStaff",
+    "workingUnderProject",
+    "keyAchievements",
+    "otherModeOfAssessment",
+    "isoCertification"
+   ],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/v1/rozgarmela/meta?key={x}",
+     "via": "getDropDownValues",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/get/dropdown/data",
+     "via": "getAssessmentAgencyRegDd",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/user/v1/assessmentAgency",
+     "via": "editAAProfileFirstPage",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/tca-edit-profile",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/tca-edit-profile",
+   "depth": 1,
+   "component": "app-tca-edit-profile",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Get Bank Details",
+     "Verify PAN",
+     "NEXT"
+    ],
+    "tabs_menu": [
+     "Delinked"
+    ],
+    "table_columns": [
+     "Sub - Sector",
+     "State",
+     "District",
+     "Job Role Name"
+    ],
+    "headings": [
+     "Completed",
+     "General Details",
+     "Financial Details",
+     "Associations"
+    ],
+    "labels": [
+     "Account Holder Name:",
+     "Account Type:",
+     "Select Account Type",
+     "Bank Key ( IFSC Code):",
+     "Bank Account :",
+     "Bank Name :",
+     "Bank Address :",
+     "PAN Identification Number :",
+     "Add Assessment Agency",
+     "Enter all the details of Add Assessment Agency",
+     "BACK",
+     "N/A",
+     "Sector (ID)",
+     "View Details"
+    ],
+    "options": [
+     "Savings Deposit A/c",
+     "Current Deposit A/c",
+     "Fixed Deposit A/c",
+     "Recurring Deposit A/c"
+    ],
+    "messages": [
+     "No Associations Found",
+     "No Associated Assessors Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "getBankDetails",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "showPanClick",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "panVerification",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "goToNextPage",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "accountHolderName",
+    "accountType",
+    "ifscCode",
+    "accountNumber",
+    "bankName",
+    "bankAddress",
+    "panNo",
+    "turnOver"
+   ],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/get/dropdown/data",
+     "via": "getAssessmentAgencyRegDd",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/user/v1/assessmentAgency",
+     "via": "editAAProfileFirstPage",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/utils/bankaddress?ifsc={x}",
+     "via": "getBankAddressByIfsc",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/associate-edit-profile",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/associate-edit-profile",
+   "depth": 1,
+   "component": "app-association-edit-profile",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "NEXT",
+     "Accepted",
+     "Rejected",
+     "Assign Assessor"
+    ],
+    "tabs_menu": [],
+    "table_columns": [
+     "Assessor Name",
+     "Mobile",
+     "Email",
+     "Linking Type",
+     "Valid From",
+     "Valid To",
+     "Action",
+     "Status"
+    ],
+    "headings": [
+     "Completed",
+     "General Details",
+     "Financial Details",
+     "Associations",
+     "Associated Assessors"
+    ],
+    "labels": [
+     "Add Assessment Agency",
+     "Enter all the details of Add Assessment Agency",
+     "Assessor ID",
+     "BACK",
+     "NA",
+     "Pending",
+     "Selected",
+     "Re-Select Assessor"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "back",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "submit",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessmentAgency/ssc?username={x}",
+     "via": "getAssociateSSc",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/get/dropdown/data",
+     "via": "getAssessmentAgencyRegDd",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/user/v1/assessmentAgency",
+     "via": "editAAProfileFirstPage",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessmentAgency/link/assessors/{x}",
+     "via": "getAssociateAA",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/view-feebased-batches/Qps",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-feebased-batches/Qps",
+   "depth": 1,
+   "component": "app-candidate-qps",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "All Marksheet for the Candidate Approval",
+     "Candidate Marks Revert to SSC",
+     "Candidate Marks Assign to Assessor with SSC Remark",
+     "Accept Candidate Marksheet",
+     "Save & Submit",
+     "Submit"
+    ],
+    "tabs_menu": [],
+    "table_columns": [
+     "QP Code",
+     "Qualification/ jobRole Name",
+     "Sector",
+     "Sub-Sector Name",
+     "Marks",
+     "Marksheet",
+     "Certification",
+     "Action"
+    ],
+    "headings": [],
+    "labels": [
+     "Not Generated",
+     "Generated",
+     "View Marks",
+     "Assessor Name:",
+     "Back",
+     "S.No",
+     "Reject Candidate Marksheet",
+     "Close",
+     "SSC Rejected the marksheet for Candidate with ID:",
+     "SSC Rejected the marksheet for Candidates:",
+     "Evidence Gathering - Mode",
+     "Online"
+    ],
+    "options": [],
+    "messages": [
+     "Please enter remarks"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "clearForm",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "assignJobRole",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goToViewBatchList",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onClosePopupAcceptReject",
+     "danger": true
+    },
+    {
+     "event": "ngModelChange",
+     "on": "div",
+     "handler": "validateRejectedStatus",
+     "danger": true
+    },
+    {
+     "event": "ngModelChange",
+     "on": "label",
+     "handler": "validateRejectedStatus",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "approveCandidateMarks",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "../assessmentmarks"
+   ],
+   "apis": [
+    {
+     "method": "POST",
+     "path": "/api/v1/jssservice/getCandidatesByBatchId",
+     "via": "getCandidate",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/v1/candidates/{x}",
+     "via": "getCandidate",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/jobRoles?fields=jobRoles",
+     "via": "getJobRole",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/assessment/batch/{x}/candidate/{x}/jobrole/list",
+     "via": "getJobRolesByBatchId",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/user/v1/enumerator/temp-candidate/action",
+     "via": "approveCandidate",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/batch/candidate/approval/{x}/{x}",
+     "via": "approveMarksForCandidate",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/view-feebased-batches/assessmentmarks",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-feebased-batches/assessmentmarks",
+   "depth": 1,
+   "component": "app-assessment-marks",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "/assessmentagency/view-feebased-batches/Qps"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/jobRoles?fields=jobRoles",
+     "via": "getJobRole",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/assessment/batch/{x}/candidate/{x}/jobrole",
+     "via": "getAssessmentOfJobRole",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/view-feebased-batches/:status",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-feebased-batches/:status",
+   "depth": 1,
+   "component": "app-view-batches",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "View Batch Details",
+     "Accept/Reject Batch",
+     "Accept Batch",
+     "Reject Batch",
+     "Save & Submit",
+     "Assign Assessor",
+     "Accept/Reject Marksheet",
+     "Accepted",
+     "Rejected"
+    ],
+    "tabs_menu": [
+     "Newly Assigned",
+     "Ongoing",
+     "Completed"
+    ],
+    "table_columns": [
+     "Batch ID",
+     "Batch Type",
+     "Job Role Code (QP Code)",
+     "Batch Size",
+     "Start Date-End Date",
+     "Status",
+     "Actions",
+     "Candidates Applied",
+     "Candidates Enrolled"
+    ],
+    "headings": [],
+    "labels": [
+     "to",
+     "Accept / Reject Batch",
+     "Close",
+     "S.No",
+     "Select Assessor",
+     "Assign Assessor",
+     "Revert/Re-assign Marksheet",
+     "All Assigned Batches"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "setWhatToshowInService",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "setBatch",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onClosePopupAcceptReject",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "changeCheckedStatus",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "label",
+     "handler": "changeCheckedStatus",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "onClosePopupAcceptReject",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "accept_rejectBatch",
+     "danger": true
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "getUniqueJobRolesArray",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "assignAssessorToBatch",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "setWhatToshowInService",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "setWhatToShowHere",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "setWhatToShowHere",
+     "danger": false
+    },
+    {
+     "event": "selectedBatchTypes",
+     "on": "app-tot-toa-filter",
+     "handler": "setSelectedBatchType",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "rejectionComment",
+    "jobRole",
+    "assessor"
+   ],
+   "links": [
+    "./../view-batch-details/",
+    "click"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/scheme/feeBased?fromDate={x}&toDate={x}&stage={x}&batchId={x}&pageNo={x}&itemsPerPage={x}&tcId=&schemeId=&tpId={x}&schemeReferenceId={x}&sortOrder={x}&sortBy=batchId&batchType={x}",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/jssservice/getBatchIdsByFY",
+     "via": "getBatches",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/report/batches",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessmentAgency/get/assessor",
+     "via": "getAllAssessorsNew",
+     "writes": false
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/tot-toa/v1/batch/{x}/jobRoles/assessmentAgencyDetails/assessor",
+     "via": "assignAssessorToBatch",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/view-feebased-batches/view-batch-details/:status/:batchId",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-feebased-batches/view-batch-details/:status/:batchId",
+   "depth": 1,
+   "component": "app-view-feebased-batch-details",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "All Marksheet for the Batch Approval",
+     "Batch Marks Revert to SSC",
+     "Batch Marks Assign to Assessor with SSC Remark",
+     "Save & Submit",
+     "Submit"
+    ],
+    "tabs_menu": [
+     "Batch Details"
+    ],
+    "table_columns": [
+     "Name of the Person",
+     "Email Address",
+     "Candidate ID",
+     "Marksheet Accepted",
+     "Certification Generated",
+     "Action"
+    ],
+    "headings": [
+     "SSC Rejected the marksheet for Candidate with ID:"
+    ],
+    "labels": [
+     "Enrolled Candidates Details(Marksheet & Certification)",
+     "Batch Job Role:",
+     "Associated Skills Sector Council:",
+     "Assigned Master Trainer:",
+     "Assigned Master Assessor:",
+     "Batch Size:",
+     "Batch Type:",
+     "Batch Start & End Date:",
+     "to",
+     "Assessment Date:",
+     "Training Centre Details:",
+     "Name of Training Centre SPOC:",
+     "Mobile Number of SPOC:",
+     "Email Address of SPOC:",
+     "Centre Address:",
+     "Nearby Landmark:",
+     "Pincode:",
+     "State/Union Territory:",
+     "District:",
+     "City/Tehsil/Mandal:",
+     "View Details",
+     "S.No",
+     "Search",
+     "Assessor Name:",
+     "SSC Rejected the marksheet for Candidates:",
+     "Back",
+     "Accept Batch Marksheet",
+     "Reject Batch Marksheet",
+     "Close"
+    ],
+    "options": [],
+    "messages": [
+     "Please enter remarks"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "changeCurrentStep",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "clearForm",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "setJobRole",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "getFilteredData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "changeCurrentStep",
+     "danger": false
+    },
+    {
+     "event": "ngModelChange",
+     "on": "div",
+     "handler": "validateRejectedStatus",
+     "danger": true
+    },
+    {
+     "event": "ngModelChange",
+     "on": "label",
+     "handler": "validateRejectedStatus",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "approveBatchMarks",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "../../../Qps",
+    "../../../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}",
+     "via": "getBatch",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v2/batchservice/ams/changesAssessmentDates/{x}/{x}",
+     "via": "getBatch",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/tot-toa/v1/candidate/list/search?keyword={x}&status={x}&batchId={x}&sortBy={x}&sortOrder=-1&pageNo={x}&size={x}&candidatesList={x}",
+     "via": "totSearch",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/view-batches",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-batches",
+   "depth": 1,
+   "component": "shared:un",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/registration",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/registration",
+   "depth": 1,
+   "component": "app-assessment-agency-registration",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [
+     "Completed",
+     "General Details",
+     "Financial Details",
+     "Associations",
+     "Address Details"
+    ],
+    "labels": [
+     "Assessment Agency Registration Form",
+     "Enter all the details of Assessment Agency Registration Form",
+     "NEXT"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "saveAndNextNew",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessmentAgency/{x}",
+     "via": "getAssesmentAgencyByUserName",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/rozgarmela/meta?key={x}",
+     "via": "getDropDownValues",
+     "writes": false
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/user/v1/update/{x}",
+     "via": "assessmentAgencyRegistration",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/get/dropdown/data",
+     "via": "getAssessmentAgencyRegDd",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/finance-details",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/finance-details",
+   "depth": 1,
+   "component": "app-finance-detail-form",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "NEXT"
+    ],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [
+     "Completed",
+     "General Details",
+     "Financial Details",
+     "Associations"
+    ],
+    "labels": [
+     "Permanent Account Number",
+     "GST Account Number",
+     "( In INR )",
+     "Assessment Agency Registration Form",
+     "Enter all the details of Assessment Agency Registration Form",
+     "BACK"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "keypress",
+     "on": "input",
+     "handler": "valuePanChange",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "showPanClick",
+     "danger": false
+    },
+    {
+     "event": "keypress",
+     "on": "input",
+     "handler": "valueGstChange",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "saveAndNext",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "PAN",
+    "GST",
+    "turnOver"
+   ],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessmentAgency/{x}",
+     "via": "getAssesmentAgencyByUserName",
+     "writes": false
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/user/v1/update/{x}",
+     "via": "assessmentAgencyRegistration",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/view-applicant-profile/:candidateId/:role",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-applicant-profile/:candidateId/:role",
+   "depth": 1,
+   "component": "shared:Sn",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/declaration",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/declaration",
+   "depth": 1,
+   "component": "app-assessment-agency-declaration",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "NEXT"
+    ],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [
+     "Completed",
+     "General Details",
+     "Financial Details",
+     "Associations",
+     "Declaration"
+    ],
+    "labels": [
+     "Assessment Agency Registration Form",
+     "Enter all the details of Assessment Agency Registration Form",
+     "I agree",
+     "Preview and Download",
+     "BACK",
+     "Registration Successful",
+     "THANK YOU",
+     "Continue To Dashboard"
+    ],
+    "options": [],
+    "messages": [
+     "I hereby declare that the information provided is true and correct. I also understand that any willful dishonesty may render for refusal of this application or immediate termination of employment.If this application is successful, I authorize NSDC to keep this information in my personal file, otherwise, all information will be destroyed within 3 months after the date of application I authorize NSDC to disclose in a confidential manner of any information supplied in this application to the parties namely the Human Resources staff, concerning department head or above for and assessment. I also understand I am entitled to update and correct the above information and agree that this information could be held for 3 months from the date of application and used for future training purpose by Nationall Skill Development Corporation.",
+     "You will recieve a confirmation message in your inbox shortly. If you do not recieve this message. Please check your spam folder.",
+     "Don't forget to add info@sdmsindia.com to your address book so that you are always the first to hear about the latest collections event and news."
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "actionFunction",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "saveAndNext",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "p",
+     "handler": "actionFunction",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "declaration"
+   ],
+   "links": [],
+   "apis": [
+    {
+     "method": "PATCH",
+     "path": "/api/user/v1/update/{x}",
+     "via": "assessmentAgencyRegistration",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/generatepdfreports/generateassessmentagencyreports/?UserName={x}",
+     "via": "getAAPdf",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/view-batches/:status",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-batches/:status",
+   "depth": 1,
+   "component": "shared:un",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/assesment-batches/:status",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/assesment-batches/:status",
+   "depth": 1,
+   "component": "app-view-batches-for-requests",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Apply For Non-Assessor App Assessment",
+     "View Received Comment",
+     "View Batch Details",
+     "Submitted"
+    ],
+    "tabs_menu": [
+     "View All Batches",
+     "Assessed Batch Request",
+     "Pending Requests",
+     "Approved",
+     "Sent Back",
+     "N/A"
+    ],
+    "table_columns": [
+     "Scheme/ Program/ Model",
+     "Sub Scheme",
+     "Sector",
+     "Batch Type",
+     "Batch ID",
+     "Job Role - (QP Code)",
+     "Request Type",
+     "Assessment Date(s)",
+     "Status",
+     "Actions",
+     "Action"
+    ],
+    "headings": [
+     "Home"
+    ],
+    "labels": [
+     "View All Batches",
+     "Assessment Batch Request",
+     "SNo",
+     "Received Comments",
+     "Ojt:",
+     "Viva:",
+     "Theory:",
+     "Practical:",
+     "N/A",
+     "Not Generated",
+     "Generated",
+     "(Not Qualified)",
+     "DropOut",
+     "Present",
+     "Absent"
+    ],
+    "options": [],
+    "messages": [
+     "No Batches Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "submitEvidence",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "showReview",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "setWhatToshowInService",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "searchFilters",
+     "on": "div",
+     "handler": "getFilterData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "setWhatToShowHere",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "setWhatToShowHere",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "../../",
+    "../../view-batches"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/scheme/feeBased?fromDate={x}&toDate={x}&stage={x}&batchId={x}&pageNo={x}&itemsPerPage={x}&tcId=&schemeId=&tpId={x}&schemeReferenceId={x}&sortOrder={x}&sortBy=batchId&batchType={x}",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/jssservice/getBatchIdsByFY",
+     "via": "getBatches",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/report/batches",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/batch/assessment/offline/set/{x}?qpCode={x}&version={x}",
+     "via": "acceptBatchForOfflineAssmnt",
+     "writes": true
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/tot-toa/v1/batch/{x}/jobRoles/assessmentAgencyDetails/assessor",
+     "via": "assignAssessorToBatch",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/admin/batch/filterdata?type={x}",
+     "via": "getBatchStatus",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/id/{x}",
+     "via": "getBatchStatus",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/admin/batch/type",
+     "via": "getBatchType",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/assesment-batches/:status/:batchId",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/assesment-batches/:status/:batchId",
+   "depth": 1,
+   "component": "app-batch-details",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Submit For Approval to SSC",
+     "Submit to SSC",
+     "View Documents",
+     "View Assessment Documents",
+     "Send back to Assessor",
+     "Send to SSC/AB",
+     "Submit",
+     "Reset",
+     "LINK TRAINING CENTER",
+     "view"
+    ],
+    "tabs_menu": [
+     "Auto Dropout Candidates",
+     "Candidate Attendance",
+     "Assessment Batch Details",
+     "Assessed Candidates"
+    ],
+    "table_columns": [
+     "ToT/ToA Centre ID",
+     "Centre Rating",
+     "Training Partner Name",
+     "State",
+     "District",
+     "Status",
+     "Training Centre ID/Location ID",
+     "Common Assessment Centre Type",
+     "Type of Neutral TC in case of 'Others'",
+     "Assessment Centre ID",
+     "Assessment Centre Name",
+     "Assessment Centre Spoc Name",
+     "Assessment Centre Spoc Email",
+     "Assessment Centre Spoc Mobile",
+     "Pincode",
+     "Address Line",
+     "Applicant ID",
+     "Applicant Name",
+     "Date",
+     "Action"
+    ],
+    "headings": [
+     "Domain Job Role",
+     "Job Role Details",
+     "Home",
+     "PMKVYRPL3/3A/1.3044",
+     "Government",
+     "Type III - RPL at Centres",
+     "MoHUA - Ministry of Housing and Urban Affairs",
+     "MoHUA-SP",
+     "Aerospace and Aviation",
+     "Approved",
+     "Aerospace CNC Machinist (AAS/Q1001 - v1.0)",
+     "TC345547",
+     "Bharuch",
+     "Yes",
+     "Gujarat",
+     "Upskilling of Professional Bicycle Mechanics",
+     "Filename.jpg"
+    ],
+    "labels": [
+     "(For Enrolment in new batches)",
+     "Pending",
+     "Accepted",
+     "Rejected",
+     "Status",
+     "Job Role Name",
+     "Assessor Name",
+     "Proctor Name",
+     "Assessor ID",
+     "Proctor ID",
+     "Dropout Count",
+     "TP Spoc Mobile No.",
+     "Assessment Agency Name",
+     "Result Upload Date",
+     "TP Spoc Name",
+     "TP Spoc Email ID",
+     "Assessment Agency ID",
+     "Job Role",
+     "Job Role Code",
+     "Platform Job Role",
+     "Batch Size",
+     "Sector",
+     "Batch Duration",
+     "Batch Type",
+     "ToT/ToA Centre",
+     "N/A",
+     "Training Centre/Location",
+     "Assessment Started On",
+     "Assessment Ended On",
+     "Assessment Started Time",
+     "Assessment Ended Time",
+     "Assessment Centre Details",
+     "Assessment Location",
+     "View Assessor Feedback",
+     "Latitude:",
+     "Longitude:",
+     "TimeStamp:",
+     "Assessor Image Details",
+     "Batch Image Details",
+     "Group Image",
+     "Training Center Premises Images",
+     "Assessment Images",
+     "Assessor Feedback",
+     "Image Details",
+     "View Proctor Feedback",
+     "Proctor Image Details",
+     "Proctor Feedback",
+     "View Candidate Details",
+     "Do you want to add Supporting Documents",
+     "Upload Supporting Documents",
+     "Close",
+     "Uploaded Documents",
+     "Uploaded Online Assessment Process",
+     "Uploaded Attendance Sheet",
+     "Batch Details",
+     "Search",
+     "S.No.",
+     "Overview",
+     "No of Candidates Enrolled",
+     "No Of Candidates eligible for t1",
+     "Training Center",
+     "Talent Thrive Crew",
+     "Project Proposal ID",
+     "Project Type",
+     "RPL Type",
+     "Scheme",
+     "Sub - Scheme",
+     "Min. Batch Size",
+     "Training Centre Information",
+     "Linked Sectors and Job Roles Target",
+     "Job Role Name (code)",
+     "NSQF Level",
+     "Target",
+     "Approved Location",
+     "Training Center ID",
+     "District",
+     "Aadhaar Required",
+     "State",
+     "Linked Training Center",
+     "Training Center Name",
+     "Supporting Documents",
+     "Signed Termsheets",
+     "Signed Agreement/Indemnity Bond",
+     "Other Supporting Documents",
+     "Image Preview",
+     "Batch ID:",
+     "Assessment Date:",
+     "Job Role:",
+     "Assessor ID:"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "changeTab",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "addSupportingDocument",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "setBatch",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "img",
+     "handler": "openImageModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "viewApplicantDetails",
+     "danger": false
+    },
+    {
+     "event": "valueChange",
+     "on": "div",
+     "handler": "uploadedDocuments",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closePopUp",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "closePopUp",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "submitForApproval",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "changeTab",
+     "danger": false
+    },
+    {
+     "event": "ngModelChange",
+     "on": "div",
+     "handler": "searchCandidates",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "searchCandidates",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "resetCandidates",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "setPageNumber",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "documentSupporting"
+   ],
+   "links": [
+    "../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/batch/{x}",
+     "via": "getBatchById",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}/TP/Spoc/detail",
+     "via": "getTPSpocDetails",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/assessment/assessor/feedback?batchId={x}",
+     "via": "getAssessorFeedback",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/id/{x}",
+     "via": "getBatchDetail",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v2/batchservice/pmkvy/batchList?query={x}&projection=no&pageNo=1&limit=1",
+     "via": "getBatchDetail",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}?source={x}",
+     "via": "getBatchDetails",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/tot-toa/v1/candidate/list/search?keyword={x}&status={x}&batchId={x}&sortBy={x}&sortOrder=-1&pageNo={x}&size={x}&candidatesList={x}",
+     "via": "totSearch",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/batch/{x}/supportingdoc/assessment",
+     "via": "uploadSupportingDocument",
+     "writes": true
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/tot-toa/v1/pmkvy/attendence/supportingdocs",
+     "via": "uploadSupportingDocument",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/admin/batch/type",
+     "via": "getBatchType",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/assesment-batches/:status/:batchId/:userName",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/assesment-batches/:status/:batchId/:userName",
+   "depth": 1,
+   "component": "app-jobroles",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "View & Proceed",
+     "View Details",
+     "View Received Comment",
+     "Accept Candidate Marksheet",
+     "Save & Submit",
+     "Submit"
+    ],
+    "tabs_menu": [
+     "Listing of Job Role"
+    ],
+    "table_columns": [
+     "QP Code",
+     "Qualification/ jobRole Name",
+     "Sector",
+     "Marks",
+     "Grade",
+     "Percentage",
+     "Result",
+     "Marksheet",
+     "Certification",
+     "Attendance Status",
+     "Status"
+    ],
+    "headings": [
+     "Home"
+    ],
+    "labels": [
+     "No data added yet",
+     "Assessor Name:",
+     "Listing of Job Role (Qualification Packs) of the Batch",
+     "Back",
+     "Batch ID",
+     "Candidate ID",
+     "Candidate Name",
+     "View Details",
+     "S.No",
+     "Reject Candidate Marksheet",
+     "Close",
+     "SSC Rejected the marksheet for Candidate with ID:",
+     "SSC Rejected the marksheet for Candidates:",
+     "Received Comments",
+     "Compulsory Nos",
+     "Total:",
+     "(Compulsory Nos)",
+     "Elective Nos",
+     "Optional Nos",
+     "Nos Name & ID",
+     "Nos Type",
+     "Theory",
+     "Practical",
+     "OJT",
+     "Viva",
+     "Total",
+     "DropOut",
+     "Absent"
+    ],
+    "options": [],
+    "messages": [
+     "Please enter remarks"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "assignJobRole",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "selectedApplicant",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goToViewBatchList",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onClosePopupAcceptReject",
+     "danger": true
+    },
+    {
+     "event": "ngModelChange",
+     "on": "div",
+     "handler": "validateRejectedStatus",
+     "danger": true
+    },
+    {
+     "event": "ngModelChange",
+     "on": "label",
+     "handler": "validateRejectedStatus",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "approveCandidateMarks",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "./",
+    "../",
+    "click"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/jobRoles?fields=jobRoles",
+     "via": "getJobRole",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/assessment/batch/{x}/candidate/{x}/jobrole/list",
+     "via": "getJobRolesByBatchId",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/user/v1/enumerator/temp-candidate/action",
+     "via": "approveCandidate",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/batch/candidate/approval/{x}/{x}",
+     "via": "approveMarksForCandidate",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/assesment-batches/:status/:batchId/:candidateId/:role",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/assesment-batches/:status/:batchId/:candidateId/:role",
+   "depth": 1,
+   "component": "app-view-candidate-details",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [
+     "Doc.pdf",
+     "Back",
+     "Personal Information",
+     "Name of The Candidate",
+     "Gender",
+     "Religion",
+     "Date Of Birth",
+     "Category",
+     "Contact & Address Details",
+     "Mobile Number Of Candidate",
+     "Email Address Of Candidate",
+     "Candidate Address",
+     "NearBy Location",
+     "Pincode",
+     "State / union Territory",
+     "District / City",
+     "Tehsil / Mandal",
+     "Education Details",
+     "Training Requests"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "downloadPdf",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "onBack",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/v1/candidates/{x}",
+     "via": "candidateDetails",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/assesment-batches/:status/:batchId/:userName/:role/qpCode",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/assesment-batches/:status/:batchId/:userName/:role/qpCode",
+   "depth": 1,
+   "component": "app-marks",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Reject",
+     "Approve",
+     "Back"
+    ],
+    "tabs_menu": [
+     "Applicant Summary"
+    ],
+    "table_columns": [],
+    "headings": [],
+    "labels": [
+     "View Transcript Document",
+     "Transcript Document",
+     "Core NOSs Total Marks :",
+     "Non Core NOSs Total Marks :",
+     "Grand Total :",
+     "Home",
+     "Applicant Summary - (",
+     "Back",
+     "Reason for Rejection",
+     "Cancel"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "mouseenter",
+     "on": "div",
+     "handler": "addClickEvent",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "downloadTranscriptDocument",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "getData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "approve",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "keyup",
+     "on": "div",
+     "handler": "validateRejectedStatus",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "reject",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "remarks"
+   ],
+   "links": [
+    "../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/jobRoles?fields=jobRoles",
+     "via": "getJobRole",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}",
+     "via": "getBatch",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v2/batchservice/ams/changesAssessmentDates/{x}/{x}",
+     "via": "getBatch",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/assessment/batch/{x}/candidate/{x}/jobrole",
+     "via": "getAssessmentOfJobRole",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/id/{x}",
+     "via": "getBatchDetail",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v2/batchservice/pmkvy/batchList?query={x}&projection=no&pageNo=1&limit=1",
+     "via": "getBatchDetail",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/assesment-batches/:status/:batchId/:userName/:role/upload-marks",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/assesment-batches/:status/:batchId/:userName/:role/upload-marks",
+   "depth": 1,
+   "component": "app-upload-marks",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Calculate & Save as Draft",
+     "Cancel Changes",
+     "Back"
+    ],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [
+     "(Compulsory Nos)",
+     "Nos Name & ID",
+     "Nos Type",
+     "Theory",
+     "Practical",
+     "OJT",
+     "Viva",
+     "Total",
+     "Total:",
+     "Elective",
+     "Optional",
+     "DropOut",
+     "Absent",
+     "Transcript Upload:",
+     "View Transcript Document",
+     "Transcript Document",
+     "Calculate & Upload",
+     "Save & Upload",
+     "Back",
+     "Core NOSs Total Marks :",
+     "Non Core NOSs Total Marks :",
+     "Grand Total :",
+     "Received Comments"
+    ],
+    "options": [],
+    "messages": [
+     "Please enter some marks."
+    ]
+   },
+   "events": [
+    {
+     "event": "keyup",
+     "on": "div",
+     "handler": "addrowValues",
+     "danger": false
+    },
+    {
+     "event": "keyup",
+     "on": "td",
+     "handler": "addrowValues",
+     "danger": false
+    },
+    {
+     "event": "fileUploaded",
+     "on": "div",
+     "handler": "fileUploaded",
+     "danger": true
+    },
+    {
+     "event": "mouseenter",
+     "on": "div",
+     "handler": "addClickEvent",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "downloadTranscriptDocument",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "submit",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onClosePopupAcceptReject",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/jobRoles?fields=jobRoles",
+     "via": "getJobRole",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/assessment/batch/id/{x}&pageNo={x}&itemsPerPage={x}",
+     "via": "getAssessment",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/assessment/batch/{x}/candidate/{x}/jobrole",
+     "via": "getAssessmentOfJobRole",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/assessment/batch/{x}/candidate/{x}/jobrole?status={x}&calcOnly={x}",
+     "via": "updateCandidateMarks",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/view-batch-details/:status/:batchId",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-batch-details/:status/:batchId",
+   "depth": 1,
+   "component": "app-view-batch-details",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Accepted",
+     "Rejected",
+     "Assign Assessor",
+     "View Comments",
+     "Cancel",
+     "Go Back"
+    ],
+    "tabs_menu": [
+     "Approved Applicants",
+     "Enrolled Candidates",
+     "Dropout Candidates",
+     "Change Request History",
+     "Candidate Attendance",
+     "View All Batches",
+     "Batch Details",
+     "Center Closed",
+     "Center could not be located",
+     "Others",
+     "Job role overview",
+     "Equipment’s",
+     "Occupation Map",
+     "Digi-Locker",
+     "Kaushal Bima Benefit"
+    ],
+    "table_columns": [
+     "Common Assessment Centre Type",
+     "Type of Neutral TC in case of 'Others'",
+     "Assessment Centre ID",
+     "Assessment Centre Name",
+     "Assessment Centre Spoc Name",
+     "Assessment Centre Spoc Email",
+     "Assessment Centre Spoc Mobile",
+     "State",
+     "District",
+     "Pincode",
+     "Address Line",
+     "Status",
+     "Action",
+     "Job Role Name (QP Code)",
+     "Assigned Assessor",
+     "Assessment Dates",
+     "Trainer ID",
+     "Candidate ID",
+     "Candidate Name",
+     "Email Address",
+     "Mobile Number",
+     "Name of the Person",
+     "Applicant ID",
+     "Training Centre/Location ID",
+     "Centre Rating",
+     "Training Partner Name",
+     "Assessor Name",
+     "NOS Code"
+    ],
+    "headings": [
+     "Assessment Centre Details",
+     "Domain",
+     "Job Role Details",
+     "Platform",
+     "PwD",
+     "Assessor Image Details",
+     "Batch Image Details",
+     "Group Images",
+     "Training Center Premises Images",
+     "Assessment Images",
+     "Image Details",
+     "Assessment Date Change Request History",
+     "New Assessment Agency Details",
+     "Current Assessment Agency Details",
+     "Assessment Agency Change Request History",
+     "New Assessor Details",
+     "Current Assessor Details",
+     "Previous Assessor Details",
+     "Assessor Change Request History",
+     "Home",
+     "Training Centre Address",
+     "Best In Class Employer Details",
+     "Training Centre Details",
+     "1.Compulsory NOS",
+     "2.Elective NOS",
+     "3.Optional NOS"
+    ],
+    "labels": [
+     "Batch Duration",
+     "Enrolled Candidates",
+     "Dropout Candidates",
+     "SPOC Name",
+     "SPOC Email",
+     "SPOC Mobile No.",
+     "Assessment Date(s)",
+     "Assessment Location",
+     "Assessment Started On",
+     "Assessment Ended On",
+     "Assessment Started Time",
+     "Assessment Ended Time",
+     "NA",
+     "Pending",
+     "Re-Assign Assessor",
+     "to",
+     "S.No",
+     "View Assessor Feedback",
+     "Latitude:",
+     "Longitude:",
+     "Timestamp:",
+     "Assessor Feedback",
+     "View Proctor Feedback",
+     "TimeStamp:",
+     "Proctor Image Details",
+     "Group Image",
+     "Training Center Premises Images",
+     "Assessment Images",
+     "Proctor Feedback",
+     "Assessment Date:",
+     "Current Assessment Date:",
+     "Commented By SSC",
+     "Commented By PMU",
+     "\\xa0\\xa0",
+     "Assessment Agency Change Details",
+     "Mobile Number of Assessor",
+     "Assessor Change Details",
+     "Batch Name",
+     "Batch Size",
+     "Training Centre/Location",
+     "Search",
+     "Reset",
+     "Change Request History",
+     "Approved Applicants",
+     "Candidate Attendance",
+     "Training Partner/Center denied to conduct assessment",
+     "Comments by Assessor -",
+     "No Comments",
+     "Ok",
+     "Image Preview",
+     "Close",
+     "Batch ID:",
+     "Sector:",
+     "Assessor Name:",
+     "Job Role:",
+     "Assessor ID:",
+     "Is AEBAS device available?",
+     "Yes",
+     "No",
+     "Is the Trainer TOT certified?",
+     "Has induction kit been provided to all candidates?",
+     "Have handbook been provided to all candidates?",
+     "Placement",
+     "Is the assessment of the batch conducted?",
+     "Comment",
+     "Cancel",
+     "Received Comments",
+     "Assign Assessor",
+     "State :",
+     "District :",
+     "Assessor Name",
+     "Assessor ID",
+     "Assign",
+     "(Compulsory Nos)",
+     "Total:",
+     "Performance Criterias",
+     "Theory",
+     "Practical",
+     "OJT",
+     "Viva",
+     "Total"
+    ],
+    "options": [],
+    "messages": [
+     "Are the posters on below mentioned parameters available in the TC premises?"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "changeTab",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "onAttendance",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "setCurrentJobRole",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "setCurrentJobRole",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "img",
+     "handler": "openImageModal",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "setPageNumber",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "app-pagination",
+     "handler": "setPageNumber",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "onBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "changeCurrentStep",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "td",
+     "handler": "viewTcDetails",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "searchCandidates",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "resetCandidates",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "td",
+     "handler": "selectedAssessorIndex",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeTcDetailsPopup",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "closeTcDetailsPopup",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeAAPopup",
+     "danger": false
+    },
+    {
+     "event": "onOpen",
+     "on": "div",
+     "handler": "stateClick",
+     "danger": false
+    },
+    {
+     "event": "onOpen",
+     "on": "div",
+     "handler": "districtClick",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "searchAssessor",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "resetFilter",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "assignAssessorToBatch",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "isAebasDeviceAvailable",
+    "isTrainerTotCertified",
+    "hasInductionKitProvidedToAllCandidates",
+    "hasHandbookProvidedToAllCandidates",
+    "placement",
+    "jobRoleOverview",
+    "equipments",
+    "occupationMap",
+    "digiLocker",
+    "kaushalBimaBenefit",
+    "isAssessmentBatchConducted",
+    "comment",
+    "state",
+    "district",
+    "assessorId",
+    "assessorName",
+    "noAssessmentConductedReason"
+   ],
+   "links": [
+    "../../../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}",
+     "via": "getBatch",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v2/batchservice/ams/changesAssessmentDates/{x}/{x}",
+     "via": "getBatch",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/assessment/assessor/feedback?batchId={x}",
+     "via": "getAssessorFeedback",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/pmkvy/get/batchlist/assessor?batchId={x}&arid={x}",
+     "via": "checkAssessorAvailablity",
+     "writes": false
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/tot-toa/v1/batch/{x}/jobRoles/assessmentAgencyDetails/assessor",
+     "via": "assignAssessorToBatch",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/tot-toa/v1/candidate/list/search?keyword={x}&status={x}&batchId={x}&sortBy={x}&sortOrder=-1&pageNo={x}&size={x}&candidatesList={x}",
+     "via": "totSearch",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/assign-assessor/:status/:batchId",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/assign-assessor/:status/:batchId",
+   "depth": 1,
+   "component": "app-assign-assessor",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Accepted",
+     "Rejected",
+     "Assign Assessor",
+     "Close",
+     "Cancel"
+    ],
+    "tabs_menu": [
+     "Batch Details"
+    ],
+    "table_columns": [
+     "Job Role Name (QP Code)",
+     "Assigned Assessor",
+     "Assessment Dates",
+     "Status",
+     "Action",
+     "Assessor Name",
+     "State",
+     "District"
+    ],
+    "headings": [],
+    "labels": [
+     "to",
+     "Domain :",
+     "S.No",
+     "NA",
+     "Pending",
+     "Selected",
+     "Re-Select Assessor",
+     "Platform :",
+     "Batch Name",
+     "Batch ID",
+     "Batch Size",
+     "Batch Date",
+     "Sector",
+     "Submit",
+     "Back",
+     "Assign Assessor",
+     "State :",
+     "District :",
+     "Assessor ID:",
+     "Assessor Name",
+     "Search",
+     "Reset",
+     "Assessor ID",
+     "\\xa0",
+     "Select"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "getAssessorData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "assignAssessorToBatch",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "onBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "changeCurrentStep",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "td",
+     "handler": "selectedAssessorIndex",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeAAPopup",
+     "danger": false
+    },
+    {
+     "event": "onOpen",
+     "on": "div",
+     "handler": "stateClick",
+     "danger": false
+    },
+    {
+     "event": "onOpen",
+     "on": "div",
+     "handler": "districtClick",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "searchAssessor",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "resetFilter",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "selectAssessor",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "state",
+    "district",
+    "assessorId",
+    "assessorName"
+   ],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}",
+     "via": "getBatch",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v2/batchservice/ams/changesAssessmentDates/{x}/{x}",
+     "via": "getBatch",
+     "writes": true
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/tot-toa/v1/batch/{x}/jobRoles/assessmentAgencyDetails/assessor",
+     "via": "assignAssessorToBatch",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/view-batch-details/:status/:id/:candidateId/:role",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/view-batch-details/:status/:id/:candidateId/:role",
+   "depth": 1,
+   "component": "shared:Sn",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/link-assessors",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-assessors",
+   "depth": 1,
+   "component": "app-link-assessors",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [
+     "Yes",
+     "No"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/link-assessors",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-assessors",
+   "depth": 2,
+   "component": "app-view-assessors",
+   "redirect": null,
+   "live": "Live dekha: list, row menu (View Details / De-Link / Validity), Link Assessor modal, ID+TAB autofetch",
+   "ui": {
+    "buttons": [
+     "De-Link Assessor",
+     "Update Assessor Validity Extension",
+     "View Assessor",
+     "Generate OTP",
+     "Link Assessor",
+     "Apply",
+     "Verify"
+    ],
+    "tabs_menu": [
+     "View My Assessors"
+    ],
+    "table_columns": [
+     "QP Code",
+     "Valid Till",
+     "User Name",
+     "Assessor Name",
+     "Country",
+     "Mobile Number",
+     "Availability",
+     "Type of Resource",
+     "Status",
+     "Action"
+    ],
+    "headings": [
+     "Home"
+    ],
+    "labels": [
+     "View Details",
+     "Yes",
+     "No",
+     "User Name",
+     "view",
+     "Assessor Name",
+     "Country",
+     "Mobile Number",
+     "Availability",
+     "Associated Job Roles",
+     "Cancel",
+     "Enter Mobile One Time Password:",
+     "OR",
+     "View My Assessors",
+     "Reset",
+     "S.No",
+     "One Time Password Verification",
+     "Enter Email One Time Password:",
+     "Name of the Applicant",
+     "Gender",
+     "Religion",
+     "Date Of Birth",
+     "Languages Known",
+     "Category"
+    ],
+    "options": [],
+    "messages": [
+     "No Batches Found",
+     "Please enter at least one OTP"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "deLinkAssessor",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "updateValidity",
+     "danger": true
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "closeModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "generateOTP",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "openModal",
+     "danger": false
+    },
+    {
+     "event": "ngModelChange",
+     "on": "div",
+     "handler": "reset",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "reset",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "applyFilters",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onVerifyOtp",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "emailOTP",
+    "mobileOTP"
+   ],
+   "links": [
+    "./view-assessor-details/",
+    "../"
+   ],
+   "apis": [
+    {
+     "method": "POST",
+     "path": "/api/user/reg/v1/generateOTP/Candidate",
+     "via": "generateOTP",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/user/v1/assessmentAgency/assessor/deLink",
+     "via": "deLinkAssessor",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/user/v1/assessor/link/assessorto/assessmentagency/duration/extend/{x}?{x}",
+     "via": "extendAssessorValidity",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/user/v1/assessor/link/assessorto/assessmentagency/{x}?{x}",
+     "via": "linkAssessor",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessor/{x}",
+     "via": "getAssessorByUserName",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/link-assessors/search-assessors",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-assessors/search-assessors",
+   "depth": 2,
+   "component": "app-search-assessors",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Generate OTP",
+     "Cancel"
+    ],
+    "tabs_menu": [
+     "Dashboard - Link Assessors"
+    ],
+    "table_columns": [],
+    "headings": [],
+    "labels": [
+     "Link an Assessor",
+     "Cancel",
+     "Assessment Agency",
+     "Search Assessors",
+     "Sector",
+     "Sub Sector",
+     "Job Role",
+     "Search",
+     "\\xa0\\xa0",
+     "One Time Password Verification"
+    ],
+    "options": [
+     "Select Sector",
+     "Select Sub Sector",
+     "Select Job Role"
+    ],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "closeModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "generateOTP",
+     "danger": true
+    },
+    {
+     "event": "change",
+     "on": "select",
+     "handler": "getSubSectors",
+     "danger": false
+    },
+    {
+     "event": "change",
+     "on": "select",
+     "handler": "getJobroles",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "SearchAssessor",
+     "danger": false
+    },
+    {
+     "event": "verifyOtp",
+     "on": "div",
+     "handler": "onVerifyOtp",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "sector",
+    "subSector",
+    "jobRole"
+   ],
+   "links": [
+    "../.."
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/sqa/sectors/subsectors/{x}",
+     "via": "getSubSectors",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/sqa/qp/getbysector",
+     "via": "getJobRoles",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/report/jobrole",
+     "via": "getJobRoles",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/user/reg/v1/generateOTP/Candidate",
+     "via": "generateOTP",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/user/v1/assessor/link/assessorto/assessmentagency/{x}?{x}",
+     "via": "linkAssessor",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/link-assessors/view-assessor-details/:assessorID",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-assessors/view-assessor-details/:assessorID",
+   "depth": 2,
+   "component": "app-view-assessor-details",
+   "redirect": null,
+   "live": "Live dekha: 6 tabs, Associated Assessment Agency table",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [
+     "View My Assessors",
+     "View Assessor Details",
+     "Contact & Address Details",
+     "Education Details",
+     "Professional Experience Details",
+     "Associated Assessment Agency",
+     "Certification Details"
+    ],
+    "table_columns": [
+     "Education Attained Type",
+     "Details of Education",
+     "Job Title",
+     "Company",
+     "State",
+     "District",
+     "Duration",
+     "Assessment Agency Name",
+     "From and to Date",
+     "Type",
+     "Job Role",
+     "QP Code",
+     "Version",
+     "Certification Type (Grade)",
+     "Valid Till"
+    ],
+    "headings": [
+     "Home"
+    ],
+    "labels": [
+     "View Assessor Details",
+     "Personal Information",
+     "Email ID",
+     "Phone Number",
+     "Date of birth",
+     "Gender",
+     "Religion",
+     "Category",
+     "Origination Category",
+     "Languages Known",
+     "Address Details",
+     "Mobile Number of Assessor",
+     "Email Address of Assessor",
+     "Country",
+     "Assessor Address",
+     "Nearby Landmark",
+     "Education Details",
+     "Sl. No",
+     "Added Professional Experience Details",
+     "Relevant Sector",
+     "Associated Assessment Agency",
+     "Sl. No.",
+     "Certification Details"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "../../../",
+    "../../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/pmkvy/get/batchlist/assessor",
+     "via": "getAssessor",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/get/dropdown/data",
+     "via": "getAssessmentAgencyRegDd",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessor/{x}",
+     "via": "getAssessorByUserName",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/link-assessors/assessor-profile-view/:assessorID",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-assessors/assessor-profile-view/:assessorID",
+   "depth": 2,
+   "component": "app-assessor-profile-view",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [
+     "View Assessor Details"
+    ],
+    "labels": [
+     "Back",
+     "Personal Information",
+     "Contact & Address Details",
+     "Mobile Number Of Applicant",
+     "Email Address Of Applicant",
+     "Applicant Address",
+     "NearBy Landmark",
+     "Pincode",
+     "State / Union Territory",
+     "District / City",
+     "Tehsil / Mandal",
+     "Education Details",
+     "Added Professional Experience Details",
+     "Added Training / Assessment Experience Details",
+     "Training Requests",
+     "N/A",
+     "State/Union Territory/Region",
+     "District/City",
+     "Tehsil/Mandal"
+    ],
+    "options": [],
+    "messages": [
+     "No record found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "downloadPdf",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "/assessmentagency/link-assessors/view-assessor-details/"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/pmkvy/get/batchlist/assessor",
+     "via": "getAssessor",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessor/{x}",
+     "via": "getAssessorByUserName",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/link-proctors",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-proctors",
+   "depth": 1,
+   "component": "app-link-proctor",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [
+     "View Comment Received",
+     "Compulsory Nos"
+    ],
+    "options": [],
+    "messages": [
+     "Please enter some marks."
+    ]
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/link-proctors",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-proctors",
+   "depth": 2,
+   "component": "app-proctor-pool",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Link Proctor",
+     "View Proctor",
+     "Generate OTP",
+     "\\xa0 \\xa0",
+     "Cancel"
+    ],
+    "tabs_menu": [
+     "View Proctors",
+     "My Linked Proctors"
+    ],
+    "table_columns": [
+     "User Name",
+     "Proctor Name",
+     "Registration Completed",
+     "Delinked",
+     "Action"
+    ],
+    "headings": [],
+    "labels": [
+     "Link a Proctor",
+     "Cancel",
+     "Enter Mobile One Time Password:",
+     "Home",
+     "View All Batches",
+     "All Unlinked Proctors",
+     "S.No",
+     "One Time Password Verification",
+     "Enter Email One Time Password:",
+     "Verify & Link"
+    ],
+    "options": [],
+    "messages": [
+     "No Proctors Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "openModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "closeModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "generateOTP",
+     "danger": true
+    },
+    {
+     "event": "searchFilters",
+     "on": "div",
+     "handler": "getFilterData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "openModal",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeOTPModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "onVerifyOtp",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "emailOTP",
+    "mobileOTP"
+   ],
+   "links": [
+    "./view-assessor-details/",
+    "../../",
+    "/assessmentagency/link-proctors/my-linked-proctors"
+   ],
+   "apis": [
+    {
+     "method": "POST",
+     "path": "/api/user/reg/v1/generateOTP/Candidate",
+     "via": "generateOTP",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/user/v1/proctor/link/proctorto/assessmentagency/{x}?{x}",
+     "via": "linkProctor",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/proctor/{x}",
+     "via": "getProctorByUserName",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/link-proctors/proctor-pool",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-proctors/proctor-pool",
+   "depth": 2,
+   "component": "app-proctor-pool",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Link Proctor",
+     "View Proctor",
+     "Generate OTP",
+     "\\xa0 \\xa0",
+     "Cancel"
+    ],
+    "tabs_menu": [
+     "View Proctors",
+     "My Linked Proctors"
+    ],
+    "table_columns": [
+     "User Name",
+     "Proctor Name",
+     "Registration Completed",
+     "Delinked",
+     "Action"
+    ],
+    "headings": [],
+    "labels": [
+     "Link a Proctor",
+     "Cancel",
+     "Enter Mobile One Time Password:",
+     "Home",
+     "View All Batches",
+     "All Unlinked Proctors",
+     "S.No",
+     "One Time Password Verification",
+     "Enter Email One Time Password:",
+     "Verify & Link"
+    ],
+    "options": [],
+    "messages": [
+     "No Proctors Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "openModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "closeModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "generateOTP",
+     "danger": true
+    },
+    {
+     "event": "searchFilters",
+     "on": "div",
+     "handler": "getFilterData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "openModal",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeOTPModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "onVerifyOtp",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "emailOTP",
+    "mobileOTP"
+   ],
+   "links": [
+    "./view-assessor-details/",
+    "../../",
+    "/assessmentagency/link-proctors/my-linked-proctors"
+   ],
+   "apis": [
+    {
+     "method": "POST",
+     "path": "/api/user/reg/v1/generateOTP/Candidate",
+     "via": "generateOTP",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/user/v1/proctor/link/proctorto/assessmentagency/{x}?{x}",
+     "via": "linkProctor",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/proctor/{x}",
+     "via": "getProctorByUserName",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/link-proctors/view-deatails/:proctorID",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-proctors/view-deatails/:proctorID",
+   "depth": 2,
+   "component": "app-view-proctor-details",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Back"
+    ],
+    "tabs_menu": [],
+    "table_columns": [
+     "From and to Date"
+    ],
+    "headings": [],
+    "labels": [
+     "View Proctor Profile",
+     "Personal Information",
+     "Name of Proctor",
+     "Date of Birth",
+     "Gender",
+     "Languages Known",
+     "Religion",
+     "Category",
+     "Origination Category",
+     "Contact & Address Details",
+     "Mobile Number of Proctor",
+     "Email Address of Proctor",
+     "Country",
+     "Proctor Address",
+     "Nearby Landmark",
+     "Education Details",
+     "Added Professional Experience Details",
+     "Associated Assessment Agency",
+     "Assessment Agency Name"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "goBack",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/get/dropdown/data",
+     "via": "getAssessmentAgencyRegDd",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/proctor/{x}",
+     "via": "getProctorByUserName",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/link-proctors/my-linked-proctors",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/link-proctors/my-linked-proctors",
+   "depth": 2,
+   "component": "app-linked-proctors",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Delink"
+    ],
+    "tabs_menu": [
+     "Delink Proctor",
+     "View Proctors",
+     "My Linked Proctors"
+    ],
+    "table_columns": [
+     "User Name",
+     "Proctor Name",
+     "State",
+     "District",
+     "Mobile Number",
+     "Action"
+    ],
+    "headings": [],
+    "labels": [
+     "Home",
+     "View All Batches",
+     "All Unlinked Proctors",
+     "S.No",
+     "Reason For Delinking Proctor",
+     "Close",
+     "N/A",
+     "State/Union Territory/Region",
+     "District/City",
+     "Tehsil/Mandal"
+    ],
+    "options": [],
+    "messages": [
+     "No Proctors Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "setBatchAction",
+     "danger": false
+    },
+    {
+     "event": "searchFilters",
+     "on": "div",
+     "handler": "getFilterData",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onClosePopupDelink",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "onClosePopupDelink",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "delinkProctor",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "rejectionComment"
+   ],
+   "links": [
+    "../../",
+    "/assessmentagency/link-proctors/proctor-pool"
+   ],
+   "apis": [
+    {
+     "method": "POST",
+     "path": "/api/user/reg/v1/generateOTP/Candidate",
+     "via": "generateOTP",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/proctor/{x}",
+     "via": "getProctorByUserName",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/search-assesor",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/search-assesor",
+   "depth": 1,
+   "component": "app-list-trainers-assessors",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Search",
+     "View Uploaded Evidence"
+    ],
+    "tabs_menu": [
+     "LOGIN",
+     "Register",
+     "Trainer Search",
+     "Assessor Search"
+    ],
+    "table_columns": [
+     "Trainer ID",
+     "Trainer Name",
+     "State",
+     "Gender",
+     "Sector",
+     "Domain Job Role",
+     "TOT Status",
+     "Assessor ID",
+     "Assessor Name",
+     "TOA Status"
+    ],
+    "headings": [
+     "Training of Trainers/Assessors",
+     "National Portal for Trainers and Assessors",
+     "Home"
+    ],
+    "labels": [
+     "Language",
+     "HOME",
+     "TRAINING PARTNER & CENTRE",
+     "CANDIDATE",
+     "SSC",
+     "QP_NOS",
+     "TOT/TOA",
+     "INITIVES_BY_NSDC",
+     "Register as Assessor/Trainer",
+     "Login as Assessor/Trainer",
+     "S No",
+     "Assessor Search",
+     "State",
+     "Sector",
+     "Domain Job role",
+     "Reset"
+    ],
+    "options": [
+     "English",
+     "Hindi",
+     "Technical Support",
+     "Select State",
+     "Select Sector",
+     "Select Job Role",
+     "Select Status",
+     "Certified",
+     "Provisional"
+    ],
+    "messages": [
+     "No Data Found",
+     "No Batches Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "change",
+     "on": "select",
+     "handler": "switchLanguage",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goToRegistration",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "goToLogin",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "tabChange",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "setTrainingPageNumber",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "setAssessorPageNumber",
+     "danger": false
+    },
+    {
+     "event": "change",
+     "on": "select",
+     "handler": "getJobRoles",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "resetSearchForm",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "getSearchResult",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "state",
+    "sector",
+    "jobRole",
+    "trainerId",
+    "trainerName",
+    "totStatus"
+   ],
+   "links": [
+    "../",
+    "../login",
+    "../direct-registration",
+    "/"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/get/trainer?pageNo={x}&limit={x}&userName={x}",
+     "via": "getTrainerList",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v2/nodeusermanagement/getTrainerListing",
+     "via": "getTrainerList",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/sqa/qp/getbysector/v1",
+     "via": "getJobRolesWithoutAuth",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/trainers/public/jobroles/all?state={x}&sector={x}&jobRole={x}&trId={x}\\n\\t\\t\\t&trName={x}&status={x}&limit={x}\\n\\t\\t\\t&pageNo={x}&originationCategory={x}&typeOfCertification={x}\\n\\t\\t\\t&countryCode={x}&citsTrainer={x}",
+     "via": "getPublicTrainerList",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/assessors/public/jobroles/all?state={x}&sector={x}&jobRole={x}&arId={x}&arName={x}&status={x}&limit={x}&pageNo={x}\\n\\t\\t\\t&originationCategory={x}\\n\\t\\t\\t&typeOfCertification={x}\\n\\t\\t\\t&countryCode={x}",
+     "via": "getPublicAssessorList",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/offline-assessment",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/offline-assessment",
+   "depth": 1,
+   "component": "app-non-assessor-app-assessment-batches",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Upload Evidence",
+     "View Reason",
+     "View Audit Trail",
+     "Submitted",
+     "Rejected"
+    ],
+    "tabs_menu": [
+     "View All Batches",
+     "Pending",
+     "Approved",
+     "Sent Back"
+    ],
+    "table_columns": [
+     "Scheme/Program/Model",
+     "Sector",
+     "Batch ID",
+     "Job Role - (QP Code)",
+     "Assessment Date(s)",
+     "Request Received Date",
+     "Status",
+     "Actions"
+    ],
+    "headings": [
+     "Non-Assessor App Assessment | Batch ID:"
+    ],
+    "labels": [
+     "Evidence Pictures Uploaded",
+     "Home",
+     "View All Batches",
+     "Batches Count:",
+     "S.No.",
+     "No",
+     "N/A"
+    ],
+    "options": [],
+    "messages": [
+     "No Batches Found",
+     "In case non-assessor app assessment has done due to unforeseen conditions, please upload the evidences proofs for the same."
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "viewEvidence",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "uploadEvidence",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "displayReason",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "viewAuditTrial",
+     "danger": false
+    },
+    {
+     "event": "messageEvent",
+     "on": "app-evidence-submission",
+     "handler": "receiveMessage",
+     "danger": false
+    },
+    {
+     "event": "searchFilters",
+     "on": "div",
+     "handler": "getFilterData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "resetSearch",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "resetSearch",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [
+    "../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/scheme/feeBased?fromDate={x}&toDate={x}&stage={x}&batchId={x}&pageNo={x}&itemsPerPage={x}&tcId=&schemeId=&tpId={x}&schemeReferenceId={x}&sortOrder={x}&sortBy=batchId&batchType={x}",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/jssservice/getBatchIdsByFY",
+     "via": "getBatches",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/report/batches",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/admin/batch/filterdata?type={x}",
+     "via": "getBatchStatus",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/id/{x}",
+     "via": "getBatchStatus",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/batch/assessment/offline/set/{x}?qpCode={x}&version={x}",
+     "via": "acceptBatchForOfflineAssmnt",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/audit-trails/:batchId/:qpCode/:version/:actionByRole",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/audit-trails/:batchId/:qpCode/:version/:actionByRole",
+   "depth": 1,
+   "component": "shared:z3",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/payouts",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/payouts",
+   "depth": 1,
+   "component": "app-payouts",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/payouts",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/payouts",
+   "depth": 2,
+   "component": "app-payout-home",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [
+     "End date must be greater than Start date"
+    ],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goToparticularPage",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": []
+  },
+  {
+   "route": "/payouts/view-batch-status/:type",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/payouts/view-batch-status/:type",
+   "depth": 2,
+   "component": "app-view-batch-status",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Download Excel",
+     "Apply",
+     "Reset"
+    ],
+    "tabs_menu": [
+     "View Batch Status",
+     "Initiate Payouts",
+     "Hold",
+     "Approved",
+     "Rejected"
+    ],
+    "table_columns": [
+     "Status",
+     "Sub Scheme",
+     "Batch ID",
+     "TC Name/ Employer Name/ Camps Name",
+     "TC ID",
+     "State, District",
+     "Job Role Name ( ID )",
+     "TP ID",
+     "Action"
+    ],
+    "headings": [
+     "Home",
+     "Payments & Tranches",
+     "Budget"
+    ],
+    "labels": [
+     "View Batch Status",
+     "Pending",
+     "Scheme/ program/ Modal",
+     "End date must be greater than Start date"
+    ],
+    "options": [],
+    "messages": [
+     "No Batches Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "downloadExcelReportTabwise",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "td",
+     "handler": "goTOtrancheView",
+     "danger": true
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "goToparticularPage",
+     "danger": false
+    },
+    {
+     "event": "blur",
+     "on": "div",
+     "handler": "dateValidation",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "apply",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "resetForm",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "getStatus",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "getStatus",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "startDate",
+    "endDate",
+    "tpId",
+    "batchId",
+    "projectId"
+   ],
+   "links": [
+    "../../../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/scheme/feeBased?fromDate={x}&toDate={x}&stage={x}&batchId={x}&pageNo={x}&itemsPerPage={x}&tcId=&schemeId=&tpId={x}&schemeReferenceId={x}&sortOrder={x}&sortBy=batchId&batchType={x}",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/jssservice/getBatchIdsByFY",
+     "via": "getBatches",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/report/batches",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/tranche/ssc/assessmentfee/getbatches?status={x}",
+     "via": "getBatchesForTrancheForSsc",
+     "writes": false
+    }
+   ]
+  },
+  {
+   "route": "/payouts/tranche-initiate/:type",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/payouts/tranche-initiate/:type",
+   "depth": 2,
+   "component": "app-initiate-payouts",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Apply",
+     "Reset"
+    ],
+    "tabs_menu": [
+     "Payments & Tranches",
+     "Initiate Payouts"
+    ],
+    "table_columns": [
+     "TC Name/Employer Name/Camps Name(ID)",
+     "State, District",
+     "Scheme/ program/ Modal",
+     "Sub Scheme",
+     "Batch ID",
+     "Batch Training Dates",
+     "Job Role Name ( ID )",
+     "Batch Type",
+     "Action"
+    ],
+    "headings": [
+     "Home"
+    ],
+    "labels": [
+     "To",
+     "View Details",
+     "View Batch Status",
+     "TP/PIA Name(ID)"
+    ],
+    "options": [],
+    "messages": [
+     "No Batches Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goToViewTranche",
+     "danger": true
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goToparticularPage",
+     "danger": false
+    },
+    {
+     "event": "blur",
+     "on": "div",
+     "handler": "dateValidation",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "apply",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "resetForm",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "startDate",
+    "endDate",
+    "tpId",
+    "batchId"
+   ],
+   "links": [
+    "../../../"
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/v1/schemeModule/scheme/{x}",
+     "via": "getSchemeDetails",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/tranche/aa/assessmentfee/initiationbatches",
+     "via": "getAssessmentBatchesAA",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/tranche/getbatchesfortranche",
+     "via": "getBatchByTPIdAndSchemeType",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/scheme/feeBased?fromDate={x}&toDate={x}&stage={x}&batchId={x}&pageNo={x}&itemsPerPage={x}&tcId=&schemeId=&tpId={x}&schemeReferenceId={x}&sortOrder={x}&sortBy=batchId&batchType={x}",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/jssservice/getBatchIdsByFY",
+     "via": "getBatches",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/report/batches",
+     "via": "getBatches",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/tranche/calculatefivepercentincentive",
+     "via": "initiateFivePercentTPPayout",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/payouts/view-branch-tranche/:batchId/:type/:status",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/payouts/view-branch-tranche/:batchId/:type/:status",
+   "depth": 2,
+   "component": "app-payments-tranches",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Payment Deduction History",
+     "Verify Payouts",
+     "Back",
+     "Verify Yearly Incentive",
+     "Reinitiate Yearly Incentive",
+     "Hold",
+     "Reject",
+     "Reinitiate Assessment Fee",
+     "Verify Assessment Fee",
+     "Assessment Fee Invoice"
+    ],
+    "tabs_menu": [],
+    "table_columns": [
+     "Result",
+     "Placement Status",
+     "Eligible For Boarding and Lodging",
+     "Opted For Boarding and Lodging",
+     "Boarding Type",
+     "ID Verified",
+     "Special Area",
+     "Base cost increment for disability(%)",
+     "Special Area Incremental Base Cost(%)",
+     "Boarding Percentage(%)",
+     "Assisstive Aid",
+     "Job Outreach Aid for PWD",
+     "Career Progression Support",
+     "Post Placement Tracking Incentive for PWD",
+     "Foreign Placement Incentive",
+     "Base Cost(INR)",
+     "Effective Base Cost (INR)",
+     "Actual Tranche Amount(INR)",
+     "Payment Deduction Amount(Tranche)(INR)",
+     "Actual Boarding&Lodging Amount(INR)",
+     "Payment Deduction Amount(B&L)(INR)",
+     "Eligible Boarding Amount(INR)",
+     "Incentive Amount(INR)",
+     "Candidate Name",
+     "Candidate Status",
+     "State",
+     "District",
+     "Enrollement Date",
+     "Gender",
+     "Disability Type",
+     "PWD",
+     "Attendance Status",
+     "Assessment Fee(INR)"
+    ],
+    "headings": [
+     "No Data Found",
+     "Financial payout after enrollment (Tranche 1) / Payouts",
+     "Financial payout after Assessment (Tranche 1) / Payouts",
+     "Financial Payout after Assessment (Tranche 2) / Payouts",
+     "Financial Payout after Certificate Ceromony (Tranche 2) / Payouts",
+     "Financial payout after Placement(Tranche 3) / Payouts",
+     "Rejected Comment -"
+    ],
+    "labels": [
+     "Back",
+     "Batch ID:",
+     "Eligible Boarding and Lodging Percentage(%):",
+     "Total Amount for assessed candidate(B&L):",
+     "Total reversal amount of non assessed candidates(B&L):",
+     "Job role Category",
+     "Tranche Stage:",
+     "Training Type:",
+     "Disbursement Percentage(%):",
+     "Tranche Initiated On:",
+     "Yearly Incentive Initiated On:",
+     "Special Area TC:",
+     "Total Enrolled Candidates:",
+     "Total Certified Candidates:",
+     "Total Placed Candidates:",
+     "Tranche Amount to be Disbursed before Deduction(INR):",
+     "Tranche Amount to be Deducted(INR):",
+     "Total amount for certified candidates:",
+     "Total reversal amount of non certified candidates:",
+     "Tranche Amount to be Disbursed(INR):",
+     "Yearly Incentive Amount(INR):",
+     "Job Role Duration:",
+     "TC District Category:",
+     "Assessment Date:",
+     "Ceiling cost :",
+     "Bridge Course:",
+     "Bridge Course Training Hours:",
+     "Residential Availability For Men:",
+     "Residential Availability For Women:",
+     "Total Job outreach Aid Amount:",
+     "Total Career Progression Amount:",
+     "Total Post Placement Tracking Incentive:",
+     "Total Foreign Placement Incentive:",
+     "Percentage Of Placed Candidate:",
+     "Actual Tranche Amount:",
+     "Discount Percentage:",
+     "Bridge Module Discount Percentage:",
+     "Actual advance amount:",
+     "NIA(New India Assurance):",
+     "Total Assessment Fee:",
+     "Scheme Name:",
+     "Batch Created Date:",
+     "TC Name/Employer Name/Camps Name:",
+     "Training Centre State:",
+     "Training Centre District:",
+     "Job role/QP Code:",
+     "NSQF Level:",
+     "Training Partner Name:",
+     "Batch Duration:",
+     "yes",
+     "No",
+     "Candidate List -",
+     "\\xa0",
+     "Candidate ID",
+     "Payments & Tranches -",
+     "Total Assessment Fee(INR):",
+     "Requested Deduction Of Payment Percentage History",
+     "Reason for Rejection",
+     "Cancel"
+    ],
+    "options": [],
+    "messages": [
+     "No Data Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "paymentDeductionHistory",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "downloadInvoice",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "verifyTrancheData",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "reInitiateTranchePayment",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "verifyYearlyIncentive",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "reInitiateyearlyIncentive",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "getStatus",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "getStatus",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "reject",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "reinitiateAssessmentFee",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "verifyAssessmentFee",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "closeModal",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [
+    "remarks"
+   ],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/batch/{x}",
+     "via": "getBatchDetails",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}?source={x}",
+     "via": "getBatchDetails",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/tranche/ssc/view/assessmentfee?batchId={x}",
+     "via": "getAssessmentDetailsForSSC",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/tranche/getbudgetdata",
+     "via": "getBudgetDetails",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/id/{x}",
+     "via": "getBatchDetail",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v2/batchservice/pmkvy/batchList?query={x}&projection=no&pageNo=1&limit=1",
+     "via": "getBatchDetail",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/tranche/getyearlyincentivebyid",
+     "via": "getYIForBatch",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/tranche/generateReceiptForInvoice",
+     "via": "generateInvoiceForTranche",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/tranche/tranchecalculation",
+     "via": "initiateTranchePayment",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v1/tranche/ssc/verify",
+     "via": "verifyTrancheBySSC",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v1/tranche/approval",
+     "via": "verifyTrancheDataByType",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v1/tranche/verifyyearlyincentive",
+     "via": "verifyYIDataForBatch",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/tranche/calculateyearlyincentive",
+     "via": "initiateYearlyIncentivePayout",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v1/tranche/assessmentfee/aa/verify",
+     "via": "verifyAssessmentFeeAA",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v1/tranche/assessmentfee/ssc/verify",
+     "via": "verifyAssessmentFee",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v1/tranche/ssc/assessmentfee",
+     "via": "initiateAssessmentPayment",
+     "writes": true
+    }
+   ]
+  },
+  {
+   "route": "/payouts/view-tranche-batch-details/:batchId/:type",
+   "url": "https://admin.skillindiadigital.gov.in/admin-profile/assessmentagency/payouts/view-tranche-batch-details/:batchId/:type",
+   "depth": 2,
+   "component": "app-payout-view-batch-details",
+   "redirect": null,
+   "live": "",
+   "ui": {
+    "buttons": [
+     "Initiate Assessment Fee",
+     "Back",
+     "Verify 5% TP Payout",
+     "Reinitiate 5% TP Payout"
+    ],
+    "tabs_menu": [
+     "Tranche & Associated Payouts",
+     "Tranche 2 & Associated Payouts",
+     "Back"
+    ],
+    "table_columns": [
+     "Candidate Name",
+     "Email",
+     "Mobile Number",
+     "Enrollement Date",
+     "Assessment Date",
+     "Gender"
+    ],
+    "headings": [
+     "Batch Details",
+     "Candidates",
+     "Project Details"
+    ],
+    "labels": [
+     "Regular Batch ID:",
+     "Batch ID:",
+     "Sector:",
+     "TC ID/Employer ID/Camps ID:",
+     "Training partner ID:",
+     "Batch Name:",
+     "NSQF Level:",
+     "TC Name/Employer Name/Camps Name:",
+     "Training Partner Name:",
+     "Address:",
+     "Job Role/QP Code:",
+     "Batch Duration:",
+     "Assessment Agency ID:",
+     "Assessment Agency Name:",
+     "Email:",
+     "Assessment Agency Details",
+     "Assessor ID:",
+     "Assessor Name:",
+     "Assessor Details",
+     "Candidate List",
+     "Candidate ID",
+     "Batch Details",
+     "Project Details",
+     "Scheme:",
+     "Sub Scheme:",
+     "Project ID:",
+     "Total project Target:",
+     "Consumed Target:",
+     "Total Batches created:",
+     "Cummulative Total Tranche Amount:",
+     "5% Disbursement amount:"
+    ],
+    "options": [],
+    "messages": [
+     "No Data Found"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "initiateTranchePayment",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "initiateAsssessmentFee",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "initiateTranchePayment",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "goBack",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "getStatus",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "getStatus",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "verify5percentPayout",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "reinitiateFivePercentPayout",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "goBack",
+     "danger": false
+    }
+   ],
+   "form_fields": [],
+   "formControls": [],
+   "links": [],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/batch/{x}",
+     "via": "getBatchDetails",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}?source={x}",
+     "via": "getBatchDetails",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/tranche/getfivepercentincentivebyid",
+     "via": "getFivePercentageForProject",
+     "writes": false
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v1/tranche/verifyfivepercentincentive",
+     "via": "verify5percentPayout",
+     "writes": true
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/id/{x}",
+     "via": "getBatchDetail",
+     "writes": false
+    },
+    {
+     "method": "GET",
+     "path": "/api/v2/batchservice/pmkvy/batchList?query={x}&projection=no&pageNo=1&limit=1",
+     "via": "getBatchDetail",
+     "writes": false
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/tranche/calculateyearlyincentive",
+     "via": "initiateYearlyIncentivePayout",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/tranche/tranchecalculationformigration",
+     "via": "initiateTranchePaymentForMigratedBatch",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/tranche/tranchecalculation",
+     "via": "initiateTranchePayment",
+     "writes": true
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v1/tranche/ssc/assessmentfee",
+     "via": "initiateAssessmentPayment",
+     "writes": true
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/tranche/calculatefivepercentincentive",
+     "via": "initiateFivePercentTPPayout",
+     "writes": true
+    }
+   ]
+  }
+ ],
+ "widgets": [
+  {
+   "component": "app-applicants",
+   "ui": {
+    "buttons": [
+     "Submit Attendance & End Assessment",
+     "Download Candidates List",
+     "View Received Comment",
+     "View & Proceed",
+     "View Marks Details",
+     "Upload Marks",
+     "Edit Marks",
+     "Reset",
+     "Save & Submit"
+    ],
+    "tabs_menu": [],
+    "table_columns": [
+     "Applicant ID",
+     "Applicant Name",
+     "Status",
+     "Action",
+     "Marks",
+     "Grade",
+     "Remark",
+     "Result",
+     "Trainer ID",
+     "Job Role",
+     "(Qp Code)",
+     "Percentage",
+     "Attendance Status"
+    ],
+    "headings": [
+     "SSC Rejected the marksheet for Applicant with IDs:"
+    ],
+    "labels": [
+     "Submit Attendance",
+     "View Job Role Details",
+     "S.No.",
+     "Theory:",
+     "Practical:",
+     "Total:",
+     "N/A",
+     "Skill Marks:",
+     "P",
+     "A",
+     "Present",
+     "Absent",
+     "Awaiting Attendance",
+     "View Candidate Details",
+     "Revert",
+     "Re-Assign",
+     "Assessor",
+     "SSC Rejected the marksheet for Applicant:",
+     "Assessor:",
+     "Search",
+     "Close",
+     "Received Comments"
+    ],
+    "options": [],
+    "messages": [
+     "Please enter remarks"
+    ]
+   },
+   "events": [
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "openStartAssessmentModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "submitAttendance",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "downloadCandidatesList1",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "selectedComment",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "div",
+     "handler": "setPageNumber",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "app-pagination",
+     "handler": "setPageNumber",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "assignJobRole",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "uploadMarks",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "showReview",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "viewApplicantDetails",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "submitReview",
+     "danger": true
+    },
+    {
+     "event": "ngModelChange",
+     "on": "div",
+     "handler": "searchCandidates",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "searchCandidates",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "resetCandidates",
+     "danger": false
+    },
+    {
+     "event": "ngModelChange",
+     "on": "div",
+     "handler": "validateRejectedStatus",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "approveBatchMarks",
+     "danger": true
+    }
+   ],
+   "apis": [
+    {
+     "method": "POST",
+     "path": "/api/tot-toa/v1/candidate/list/search?keyword={x}&status={x}&batchId={x}&sortBy={x}&sortOrder=-1&pageNo={x}&size={x}&candidatesList={x}",
+     "via": "totSearch"
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}",
+     "via": "getBatch"
+    },
+    {
+     "method": "PUT",
+     "path": "/api/v2/batchservice/ams/changesAssessmentDates/{x}/{x}",
+     "via": "getBatch"
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/id/{x}",
+     "via": "getBatchDetail"
+    },
+    {
+     "method": "GET",
+     "path": "/api/v2/batchservice/pmkvy/batchList?query={x}&projection=no&pageNo=1&limit=1",
+     "via": "getBatchDetail"
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/batch/{x}/assessment/{x}{x}",
+     "via": "startOrEndAssessmentForRPL"
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/mobile/candidate/jobrole/attendance",
+     "via": "updateCandidatesAttendance"
+    },
+    {
+     "method": "PUT",
+     "path": "/api/tot-toa/v1/assessment/resetAssmtCandidateMarks?batchId={x}&qpCode={x}&candidateUserName={x}",
+     "via": "resetAssmtCandidateMarks"
+    }
+   ]
+  },
+  {
+   "component": "app-view-all-batches",
+   "ui": {
+    "buttons": [
+     "Submit",
+     "Submit Change Request",
+     "Assign Assessor",
+     "Assign Batch",
+     "View Comments",
+     "Accept Batch",
+     "Reject Batch",
+     "View Batch Details",
+     "View Proctor",
+     "Accepted",
+     "Rejected",
+     "Cancelled",
+     "Extend"
+    ],
+    "tabs_menu": [
+     "View All Batches",
+     "Assessed Batch Request",
+     "Pending Requests"
+    ],
+    "table_columns": [
+     "User ID",
+     "Role",
+     "User Name",
+     "Phone No.",
+     "Email ID",
+     "Availability Status",
+     "Sl.No.",
+     "Action Date",
+     "Scheme/Program/Model",
+     "Sub Scheme",
+     "Sector",
+     "Batch ID",
+     "Job Role Code (QP Code)",
+     "Status",
+     "Actions"
+    ],
+    "headings": [
+     "Request for Assessment Date Change",
+     "Assessment Date Change",
+     "Home"
+    ],
+    "labels": [
+     "Assessment Process:",
+     "Assessment Based On:",
+     "Assessment Online/Offline:",
+     "Assessment Theory/Practical:",
+     "Proctor Options:",
+     "Assessor Name (ID)",
+     "Proctor Name (ID)",
+     "Available",
+     "Not Available",
+     "Sl.No.",
+     "Assign Batch",
+     "Batch ID",
+     "Training Centre Name & Location",
+     "State/union Territory/Region",
+     "District",
+     "Cancel",
+     "Training Centre Name & Location -",
+     "No Assessor ID",
+     "No Assessor Name",
+     "Assessment Date cannot be within Batch End Date",
+     "Comment is required",
+     "Assessor ID -",
+     "Assessor Name -",
+     "Assessment Agency -",
+     "SSC -",
+     "Previous Assessment Date(s):",
+     "New Assessment Date(s):",
+     "Supporting Document :",
+     "Reason for Change",
+     "Name of The Batch -",
+     "Batch ID -",
+     "State -",
+     "District -",
+     "Close",
+     "Job Role:",
+     "Proposed Assessment Date :",
+     "Availability Status:",
+     "NA",
+     "Change Assessment Date",
+     "Change Assessor",
+     "Re-Assign Assessor",
+     "Re-Assign Proctor",
+     "Request Assessment Agency Change",
+     "Job Role -",
+     "Assessment Date:",
+     "to",
+     "Reason for Change:",
+     "Request of Changing Assessor",
+     "Select Assessor",
+     "Supporting Document:",
+     "Received Comments",
+     "Reason:",
+     "Comments:",
+     "View All Batches",
+     "Assessment Batch Request",
+     "SNo",
+     "Reason For Rejecting Batch",
+     "Reason For Accepting Batch",
+     "Proctor Empanelment Duration Extension"
+    ],
+    "options": [
+     "Select Type",
+     "Select Assessor",
+     "Select Proctor"
+    ],
+    "messages": [
+     "**For PMKVY batches, Only Aadhaar verified assessors are available in the list.(Except RPL 4)",
+     "**For PMKVY batches, Only Aadhaar verified proctors are available in the list.(Except RPL 4)",
+     "Please Select Proper Assessment Date",
+     "Please Select Proper Assessment Start Date",
+     "No Batches Found",
+     "** Notice: if the assessment dates have been crossed then the approval request will be sent automatically to the NSDC for Approval",
+     "Please select one jobrole and change the assessor for that particular jobrole"
+    ]
+   },
+   "events": [
+    {
+     "event": "change",
+     "on": "select",
+     "handler": "takeAction",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "select",
+     "handler": "getAssessorData",
+     "danger": false
+    },
+    {
+     "event": "change",
+     "on": "select",
+     "handler": "durationValidation",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "resetModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "resetModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "assignAssessorToBatch",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "input",
+     "handler": "closeFix",
+     "danger": false
+    },
+    {
+     "event": "fileUploaded",
+     "on": "div",
+     "handler": "onFileUpload",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "cancel",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "cancel",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "submitAssessmentDataChange",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "showMessage",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "getBatchData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "getBatchDataCR",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "a",
+     "handler": "getUniqueJobRolesArray",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "getUniqueJobRolesArray",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "getComments",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "setBatch",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "span",
+     "handler": "setCurrentBatch",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "setWhatToshowInService",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "clearComment",
+     "danger": false
+    },
+    {
+     "event": "searchFilters",
+     "on": "div",
+     "handler": "getFilterData",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "setWhatToShowHere",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "li",
+     "handler": "setWhatToShowHere",
+     "danger": false
+    },
+    {
+     "event": "pageNumber",
+     "on": "app-pagination",
+     "handler": "assignPageNo",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onClosePopupReject",
+     "danger": true
+    },
+    {
+     "event": "onSelect",
+     "on": "div",
+     "handler": "onRejectedReasonSelect",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "onClosePopupReject",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "rejectBatch",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "onClosePopupAccept",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "onClosePopupAccept",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "acceptBatch",
+     "danger": true
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "closeProctorModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "div",
+     "handler": "closeProctorModal",
+     "danger": false
+    },
+    {
+     "event": "click",
+     "on": "button",
+     "handler": "confirmDialog",
+     "danger": false
+    }
+   ],
+   "apis": [
+    {
+     "method": "GET",
+     "path": "/api/user/v1/proctor/{x}",
+     "via": "getProctorByUserName"
+    },
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/scheme/feeBased?fromDate={x}&toDate={x}&stage={x}&batchId={x}&pageNo={x}&itemsPerPage={x}&tcId=&schemeId=&tpId={x}&schemeReferenceId={x}&sortOrder={x}&sortBy=batchId&batchType={x}",
+     "via": "getBatches"
+    },
+    {
+     "method": "POST",
+     "path": "/api/v1/jssservice/getBatchIdsByFY",
+     "via": "getBatches"
+    },
+    {
+     "method": "GET",
+     "path": "/api/v1/report/batches",
+     "via": "getBatches"
+    },
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/batch/{x}",
+     "via": "getBatchDetails"
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/batch/{x}?source={x}",
+     "via": "getBatchDetails"
+    },
+    {
+     "method": "GET",
+     "path": "/api/batch/v1//batch/category/check",
+     "via": "getBatchCategoryForLockdown"
+    },
+    {
+     "method": "GET",
+     "path": "/api/batch/v1/feebased/schemes/list",
+     "via": "getFeebasedSchemeData"
+    },
+    {
+     "method": "GET",
+     "path": "/api/user/v1/project/spillover/assessment/data?projectId={x}&tpId={x}",
+     "via": "getSpillOverAssessmentCheck"
+    },
+    {
+     "method": "POST",
+     "path": "/api/user/v1/getUserBasedOnRoleAndIds?role={x}&pageNo=1&limit=0",
+     "via": "getAllSccDetailsOnids"
+    },
+    {
+     "method": "POST",
+     "path": "/api/user/v1/getUserBasedOnRoleAndIds?role={x}&pageNo={x}&limit={x}",
+     "via": "getAllSccDetailsOnids"
+    },
+    {
+     "method": "POST",
+     "path": "/api/batch/v1/assessmentDateCR/{x}?qpCode={x}",
+     "via": "assessmentDateCR"
+    },
+    {
+     "method": "POST",
+     "path": "/api/batch/v1/assessmentAgencyCR/{x}?showServerSuccessMessage=false",
+     "via": "assessmentAgencyCR"
+    },
+    {
+     "method": "POST",
+     "path": "/api/batch/v1/assessorCR/{x}?showServerSuccessMessage=true",
+     "via": "assessorCR"
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/tot-toa/v1/batch/{x}/jobRoles/assessmentAgencyDetails/assessor",
+     "via": "assignAssessorToBatch"
+    },
+    {
+     "method": "PATCH",
+     "path": "/api/tot-toa/v1/batch/{x}/jobRoles/assessmentAgencyDetails/proctor",
+     "via": "assignProctorToBatch"
+    },
+    {
+     "method": "GET",
+     "path": "/api/tot-toa/v1/admin/batch/type",
+     "via": "getBatchType"
+    }
+   ]
+  },
+  {
+   "component": "app-phone-email-otp-verification",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [
+    {
+     "event": "submit",
+     "on": "app-d-form-group",
+     "handler": "onVerifyOtp",
+     "danger": true
+    }
+   ],
+   "apis": []
+  },
+  {
+   "component": "app-info-widget-group",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "apis": []
+  },
+  {
+   "component": "app-info-widget",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "apis": []
+  },
+  {
+   "component": "app-footer",
+   "ui": {
+    "buttons": [],
+    "tabs_menu": [],
+    "table_columns": [],
+    "headings": [],
+    "labels": [],
+    "options": [],
+    "messages": []
+   },
+   "events": [],
+   "apis": []
+  }
+ ],
+ "api_base": "https://adminservices.skillindiadigital.gov.in",
+ "module_counts": {
+  "ab-profile": "1 routes",
+  "approver": "1 routes",
+  "assessmentagency": "5 routes",
+  "assessor": "5 routes",
+  "cmahead": "1 routes",
+  "commonnormsadmin": "1 routes",
+  "covidschemepmu": "2 routes",
+  "executive-committee": "2 routes",
+  "externalusers": "1 routes",
+  "inprocesstc": "13 routes",
+  "inprocesstp": "2 routes",
+  "inspectionagency": "1 routes",
+  "inspectionagencypmkvy4": "1 routes",
+  "nsdcadmin": "1 routes",
+  "pre-executive-committee": "2 routes",
+  "qualitycontrol": "2 routes",
+  "schemeapprover": "4 routes",
+  "schemeowner": "1 routes",
+  "seo": "3 routes",
+  "trainer": "1 routes",
+  "trainingcentre": "4 routes",
+  "trainingpartner": "15 routes"
+ }
+}

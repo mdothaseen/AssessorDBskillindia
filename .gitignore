@@ -1,0 +1,37 @@
+# ---- SECRETS: never commit ----
+session.json
+*.token
+
+# ---- Personal / scraped data: never commit (PII of assessors) ----
+assessor_raw.jsonl
+*.jsonl
+# no spreadsheet is code — all xlsx hold assessor data
+*.xlsx
+*.xls
+failed_ids.txt
+me_failed_ids.txt
+
+# ---- Downloaded files: never commit ----
+photos/
+docs/
+docs_test/
+
+# ---- Browser profiles (contain logged-in session) ----
+sidh_browser_profile/
+sidh_chrome_profile/
+sidh_data/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.tmp.xlsx
+*.part
